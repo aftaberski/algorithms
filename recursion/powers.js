@@ -1,3 +1,4 @@
+# Computing the powers of a number
 var isEven = function(n) {
     return n % 2 === 0;
 };
