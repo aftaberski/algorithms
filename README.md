@@ -1,10 +1,18 @@
 # Algorithms
 
-* Binary Search
-* Palindromes
-* Powers Computation
-* Factorial
-* Merge Sort
-* Insertion Sort
-* Quicksort
-* Selection Sort
+### Search
+* Binary Search (JS)
+
+### Recursion
+* Palindromes (JS)
+* Powers Computation (JS)
+* Factorial (JS)
+
+### Sort
+* Merge Sort (JS)
+* Insertion Sort (JS)
+* Quicksort (JS)
+* Selection Sort (JS)
+
+### Other
+* Merge Ranges (Python)
