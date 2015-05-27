@@ -1,20 +1,20 @@
-def merge_ranges(meetings):
-    sorted_meetings = sorted(meetings)
-    merged_meetings = []
+def merge_ranges(ranges):
+    sorted_ranges = sorted(ranges)
+    merged_ranges = []
 
-    previous_meeting_start, previous_meeting_end = sorted_meetings[0]
+    previous_range_start, previous_range_end = sorted_ranges[0]
 
-    for current_meeting_start, current_meeting_end in sorted_meetings[1:]:
-        if current_meeting_start <= previous_meeting_end:
-            previous_meeting_end = max(current_meeting_end, previous_meeting_end)
+    for current_range_start, current_range_end in sorted_ranges[1:]:
+        if current_range_start <= previous_range_end:
+            previous_range_end = max(current_range_end, previous_range_end)
         else:
-            merged_meetings.append((previous_meeting_start, previous_meeting_end))
-            previous_meeting_start, previous_meeting_end = \
-                current_meeting_start, current_meeting_end
+            merged_ranges.append((previous_range_start, previous_range_end))
+            previous_range_start, previous_range_end = \
+                current_range_start, current_range_end
 
-    merged_meetings.append((previous_meeting_start, previous_meeting_end))
+    merged_ranges.append((previous_range_start, previous_range_end))
 
-    return merged_meetings
+    return merged_ranges
 
-meetings = [(1, 2), (1, 5), (7, 8)]
-print merge_ranges(meetings)
+ranges = [(1, 2), (1, 5), (7, 8)]
+print merge_ranges(ranges)
