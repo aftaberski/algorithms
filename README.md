@@ -16,3 +16,4 @@
 
 ### Other
 * Merge Ranges (Python)
+* Binary Gap (Python)
